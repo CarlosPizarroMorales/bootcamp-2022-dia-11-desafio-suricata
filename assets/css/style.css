@@ -1,0 +1,22 @@
+html * {
+    font-family: 'Open sans', sans-serif;
+}
+
+header img {
+    height: 3.33rem;
+}
+
+header *, footer>section:nth-child(2) {
+    background-color: #e83e8c;
+    color: white;
+}
+
+main h1 {
+    color: #707070;
+    font-size: 3.75rem;
+}
+
+footer section img {
+    height: 6.25rem;
+}
+
