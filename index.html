@@ -28,6 +28,15 @@
     <title>Desafío Suricata</title>
 </head>
 <body>
+
+    <!-- El desafío fue testeado a una resolución inicial de widht=1280 para mantener la -->
+    <!-- relación de aspecto de la maqueta en lo posible usando el mínimo de CSS "a mano" -->
+    <!-- Se ha elegido un breakpoint en lg para 3 columnas y 1 columna todo para abajo.  -->
+    <!-- Esta decisión en línea con la filosofía Mobile First y con la noción objetiva  -->
+    <!-- de que los dispositivos de nuevas generaciones cada vez tienen más píxeles pero  -->
+    <!-- no necesariamente tienen un viewport más grande.  -->
+    <!-- Referecia viewport:  https://yesviz.com/viewport/ -->
+    <!-- Utilidad: https://whatismyviewport.com -->
     <header>
         <nav id="nav-pink" class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid ps-5">
@@ -55,16 +64,23 @@
     </header>
 
     <main class="container">
-        <h1 class="fw-bold text-center my-5 py-3">Nuestros productos</h1>
+      
+        <!-- Este título no se "wrapea" en dos líneas en mi proyecto sino hasta una -->
+        <!-- resolución de 500 width, la maqueta tiene una resolución improbable de -->
+        <!-- 320px de ancho pero no especifica si son píxeles lógicos o físicos -->
+        <!-- Como es Mobile First, donde la relación píxel-ratio nunca es 1:1 -->
+        <!-- por la idea con más sentido común: que se vea bien sin forzar columnas -->
+        <h1 class="fw-bold display-3 text-center my-5 py-3">Nuestros productos</h1>
         
         <div class="container px-5">
+          
             <!-- Primera fila del menú -->
             <div class="row justify-content-around mb-5">
                 <!-- Card 1 -->
-                <div class="card col-3  px-0">
+                <div class="card col-xs-1 col-lg-3 px-0">
                     <img src="./assets/img/colaciones.jpg" class="card-img-top" alt="una rica colación">
                     <div class="card-body">
-                      <h5 class="card-title">Colaciones</h5>
+                      <h5 class="card-title fw-bold">Colaciones</h5>
                       <p class="card-text">Some quick example text to build on the card title.</p>
                     </div>
                     <ul class="list-group list-group-flush">
@@ -77,10 +93,10 @@
                     </div>
                 </div>
                 <!-- Card 2 -->
-                <div class="card col-3 px-0">
+                <div class="card col-xs-1 col-lg-3 px-0">
                 <img src="./assets/img/desayunos.jpg" class="card-img-top" alt="un rico desayuno">
                 <div class="card-body">
-                    <h5 class="card-title">Desayunos</h5>
+                    <h5 class="card-title fw-bold">Desayunos</h5>
                     <p class="card-text">Some quick example text to build on the card title.</p>
                 </div>
                 <ul class="list-group list-group-flush">
@@ -93,10 +109,10 @@
                 </div>
                 <!-- Card 3 -->
                 </div>
-                <div class="card col-3 px-0">
+                <div class="card  col-xs-1 col-lg-3 px-0">
                     <img src="./assets/img/bebidas.jpg" class="card-img-top" alt="bebida fresquita">
                     <div class="card-body">
-                      <h5 class="card-title">Bebidas</h5>
+                      <h5 class="card-title fw-bold">Bebidas</h5>
                       <p class="card-text">Some quick example text to build on the card title.</p>
                     </div>
                     <ul class="list-group list-group-flush">
@@ -113,10 +129,10 @@
             <!-- Fila 2 -->
             <div class="row justify-content-around mb-5 pb-5">
                 <!-- Card 1 -->
-                <div class="card col-3  px-0">
-                    <img src="./assets/img/colaciones.jpg" class="card-img-top" alt="una rica colación">
+                <div class="card  col-xs-1 col-lg-3  px-0">
+                    <img src="./assets/img/dulces.jpg" class="card-img-top" alt="una rica colación">
                     <div class="card-body">
-                      <h5 class="card-title">Colaciones</h5>
+                      <h5 class="card-title fw-bold">Dulces</h5>
                       <p class="card-text">Some quick example text to build on the card title.</p>
                     </div>
                     <ul class="list-group list-group-flush">
@@ -129,10 +145,10 @@
                     </div>
                 </div>
                 <!-- Card 2 -->
-                <div class="card col-3 px-0">
-                <img src="./assets/img/desayunos.jpg" class="card-img-top" alt="un rico desayuno">
+                <div class="card  col-xs-1 col-lg-3 px-0">
+                <img src="./assets/img/empanadas.jpg" class="card-img-top" alt="un rico desayuno">
                 <div class="card-body">
-                    <h5 class="card-title">Desayunos</h5>
+                    <h5 class="card-title fw-bold">Empanadas</h5>
                     <p class="card-text">Some quick example text to build on the card title.</p>
                 </div>
                 <ul class="list-group list-group-flush">
@@ -145,10 +161,10 @@
                 </div>
                 <!-- Card 3 -->
                 </div>
-                <div class="card col-3 px-0">
-                    <img src="./assets/img/bebidas.jpg" class="card-img-top" alt="bebida fresquita">
+                <div class="card  col-xs-1 col-lg-3 px-0">
+                    <img src="./assets/img/verduras.jpg" class="card-img-top" alt="bebida fresquita">
                     <div class="card-body">
-                      <h5 class="card-title">Bebidas</h5>
+                      <h5 class="card-title fw-bold">Verduras</h5>
                       <p class="card-text">Some quick example text to build on the card title.</p>
                     </div>
                     <ul class="list-group list-group-flush">
@@ -168,6 +184,17 @@
         <div class="container-fluid d-none d-lg-flex py-5 px-5 text-white bg-info flex-row justify-content-evenly">
             <p class="fs-1 fw-bold">Ahora aceptamos</p>
             <section class="icons-section fw-normal">
+
+                <!-- Estos íconos tienen una relación de aspecto distinta -->
+                <!-- a la indicada en la maqueta por lo que en cuanto a  -->
+                <!-- espaciamiento y proporciones se ha buscado ser lo más -->
+                <!-- fiel posible a la maqueta considerando el contexto y -->
+                <!-- la relación de margenes y espacio de esta sección respecto -->
+                <!-- a otras secciones de la página, pero "igual" es imposible  -->
+                <!-- con lo que conozco de bootstrap y fontawesome hasta ahora. -->
+                <!-- Relación de aspecto de íconos en maqueta: 1.5 (80/53) -->
+                <!-- Relación de aspecto de los íconos de desarrollador-rata -->
+                <!-- sin-cuenta-Premium-en-fontawesome 😖 1.125 (72/64 a fa-4x) -->
                 <i class="fa-brands fa-cc-mastercard fa-4x mx-3"></i>
                 <i class="fa-brands fa-cc-visa fa-4x mx-3"></i>
                 <i class="fa-brands fa-cc-amex fa-4x mx-3"></i>

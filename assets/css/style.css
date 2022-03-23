@@ -11,12 +11,24 @@ header *, footer>section:nth-child(2) {
     color: white;
 }
 
+main:not(main h1) {
+    /* El color #212529 del requerimiento 
+    /* no aparece en ningún lado en la 
+    /* maqueta. Priorizo maqueta. */
+    color: #373A3C;
+}
+
 main h1 {
     color: #707070;
-    font-size: 3.75rem;
+    /* 3.75rem es exacto lo que pide la 
+    /* maqueta pero el desafio consiste 
+    /* en usar BS así que utilizaré 
+    /* .display-3 que corresponde a 4rem */
+    /* font-size: 3.75rem; */
 }
 
 footer section img {
     height: 6.25rem;
 }
+
 
