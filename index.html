@@ -28,17 +28,12 @@
     <title>Desafío Suricata</title>
 </head>
 <body>
-
-    <!-- El desafío fue testeado a una resolución inicial de widht=1280 para mantener la -->
-    <!-- relación de aspecto de la maqueta en lo posible usando el mínimo de CSS "a mano" -->
-    <!-- Se ha elegido un breakpoint en lg para 3 columnas y 1 columna todo para abajo.  -->
-    <!-- Esta decisión en línea con la filosofía Mobile First y con la idea de que los   -->
-    <!-- dispositivos de nuevas generaciones cada vez tienen más píxeles pero no -->
-    <!-- necesariamente tienen un viewport más grande.  -->
+    <!-- Desafio testeado para Web Desktop a 1280px y iPhone 5/SE (320px) -->
+    <!-- tal como solicita la maqueta. -->
     <!-- Referecia viewport:  https://yesviz.com/viewport/ -->
     <!-- Utilidad: https://whatismyviewport.com -->
     <header>
-        <nav id="nav-pink" class="navbar navbar-expand-lg navbar-dark">
+        <nav id="nav-pink" class="navbar navbar-expand-lg navbar-dark px-md-5">
             <div class="container-fluid ps-3">
               <a class="navbar-brand ms-5" href="#">
                 <img src="./assets/img/logo.png" alt="logo de la suricata">
@@ -65,13 +60,7 @@
 
     <main class="container">
       
-        <!-- Este título no se "wrapea" en dos líneas en mi proyecto sino hasta una -->
-        <!-- resolución de 500 width, la maqueta tiene una resolución improbable de -->
-        <!-- 320px de ancho pero no especifica si son píxeles lógicos o físicos -->
-        <!-- Como es Mobile First, donde la relación píxel-ratio nunca es 1:1 -->
-        <!-- por la idea con más sentido común: que se vea bien sin forzar columnas -->
         <h1 class="fw-bold display-3 text-center my-5 py-3">Nuestros productos</h1>
-        
         <div class="container px-5">
 
             <!-- Primera fila del menú -->
@@ -181,17 +170,15 @@
     </main>
 
     <footer class="mt-5">
-        <div class="container-fluid d-none d-lg-flex py-5 px-5 text-white bg-info flex-row justify-content-evenly">
+        <div class="container-fluid d-none d-lg-flex py-5 px-md-5 text-white bg-info flex-row justify-content-evenly">
             <p class="fs-1 fw-bold">Ahora aceptamos</p>
             <section class="icons-section fw-normal">
 
                 <!-- Estos íconos tienen una relación de aspecto distinta -->
                 <!-- a la indicada en la maqueta por lo que en cuanto a  -->
                 <!-- espaciamiento y proporciones se ha buscado ser lo más -->
-                <!-- fiel posible a la maqueta considerando el contexto y -->
-                <!-- la relación de margenes y espacio de esta sección respecto -->
-                <!-- a otras secciones de la página, pero "igual", es imposible  -->
-                <!-- con lo que conozco de bootstrap y fontawesome hasta ahora. -->
+                <!-- fiel a la maqueta posible pero considerando que es imposible  -->
+                <!-- que queden iguales sin cambiar su relación de aspecto. -->
                 <!-- Relación de aspecto de íconos en maqueta: 1.5 (80/53) -->
                 <!-- Relación de aspecto de los íconos de desarrollador-rata -->
                 <!-- sin-cuenta-premium-en-Fontawesome 😖😭 1.125 (72/64 a fa-4x) -->
