@@ -3,7 +3,7 @@
 |Bootcamp 2022 Modulo 2|Fundamentos del desarrollo web|
 |----|-----|
 |**Unidad**|Bootstrap|
-|**Día Bootcamp**|11/?|
+|**Día Bootcamp**|11|
 |**Día Modulo**|7/18|
 
 
